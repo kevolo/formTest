@@ -1,0 +1,22 @@
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    display: flex;
+}
+
+#leftCol {
+    display: relative;
+}
+
+#rightCol {
+    padding: 100px 30px;
+}
+
+#viking {
+    width: 600px;
+    height: auto;
+}
