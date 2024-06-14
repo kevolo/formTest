@@ -110,7 +110,7 @@ input {
 #btnInput {
     width: 40%;
     margin: 30px auto 0 auto;
- 
+}
 
 #submitBtn {
     padding: 10px 30px;
@@ -119,7 +119,7 @@ input {
     color: bisque;
     font-size: 18px;
     font-weight: 600;
-}}
+}
 
 label {
     display: block;
@@ -146,4 +146,8 @@ input {
 
 :invalid {
     border-color: red;
+}
+
+:focus {
+    border-color: aqua;    
 }
