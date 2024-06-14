@@ -1,7 +1,22 @@
+:root{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Norse";
+    src: url(https://cdn.statically.io/gh/TheOdinProject/theodinproject/efdc2888072f409e687d31dc580595dbe4fe0ff4/app/assets/fonts/Norse-Bold.otf) format("opentype");
+}
+
 html {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5rem;
+}
+
+h1 {
+    font-family: "Norse";
+    font-size: 72px;
 }
 
 #container {
@@ -9,14 +24,118 @@ html {
 }
 
 #leftCol {
-    display: relative;
-}
-
-#rightCol {
-    padding: 100px 30px;
+    position: relative;
+    width: 600px;
 }
 
 #viking {
     width: 600px;
     height: auto;
+}
+
+#odin {
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    padding: 10px 40px;
+    top: 0px;
+    left: 0px;
+    background-color: #cccccc30;
+}
+
+#odinIcon {
+    width: 125px;
+    height: auto;
+}
+
+#odinQuote {
+    display: inline;
+    position: relative;
+    color: bisque;
+    font-size: 60px;
+    vertical-align: top;
+    top: 30px;
+    left: 25px;
+}
+
+#photoCredit {
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    padding: 10px 40px;
+    bottom: 0px;
+    text-align: center;
+    background-color: #cccccc30;
+    color: bisque;
+}
+
+:link {
+    text-decoration: none;
+    color: bisque;
+}
+
+#rightCol {
+    width:  calc(100vw - 600px);
+    background: linear-gradient(160deg, rgb(117, 117, 229), darkgray, white, indigo);
+}
+
+#rightCol > h1, #rightCol > p {
+    padding: 10px 30px;
+}
+
+#rightCol > h1 {
+    text-shadow: 4px 4px 3px darkgray;
+}
+
+#inputs {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffe4c470;
+    width: 95%;
+    padding: 20px 30px;
+    margin: 0 15px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+#leftInputs, #rightInputs {
+    width: 50%;
+}
+
+input {
+    width: 200px;
+}
+
+#btnInput {
+    width: 40%;
+    margin: 30px auto 0 auto;
+ 
+
+#submitBtn {
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: brown;
+    color: bisque;
+    font-size: 18px;
+    font-weight: 600;
+}}
+
+label {
+    display: block;
+    text-transform: uppercase;
+    padding: 5px 0;
+}
+
+input {
+    display: block;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+#login {
+    margin-top: 30px;
+    padding: 10px 30px;
+    width: 100%;
+    background-color: #a0a0a0;
 }
